@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Material+Symbols+Rounded&family=Material+Symbols+Sharp&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <script src="script.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ✅ Fully Self-contained Hero Section -->
+    <section class="hero-section">
+      <!-- ✅ Hero Navbar -->
+      <nav class="hero-nav">
+        <div class="hero-logo">
+          <img src="images/logo.svg" alt="Site Logo" />
+        </div>
+
+        <div class="hero-nav-buttons">
+          <button class="hero-nav-btn">ALL BOOKS</button>
+          <button class="hero-nav-btn">NEW ARRIVAL</button>
+          <button class="hero-nav-btn">BEST SELLER</button>
+          <button class="hero-nav-btn">EDITOR PICK</button>
+          <button class="hero-nav-btn">ABOUT</button>
+          <button class="hero-nav-btn">CONTACT</button>
+        </div>
+
+        <div class="hero-nav-icons">
+          <span>
+            <i class="fa-solid fa-bag-shopping hero-icon"></i>
+            <i class="hero-icon-round">0</i>
+          </span>
+          <span>
+            <i class="fa-solid fa-user hero-icon"></i>
+          </span>
+
+          <div class="hero-menu-toggle">
+            <i class="fa-solid fa-bars" id="heroMenuToggle"></i>
+          </div>
+        </div>
+
+        <!-- ✅ Sidebar (Mobile Navigation) -->
+        <div class="hero-sidebar" id="heroNavContent">
+          <div class="hero-sidebar-logo">
+            <img src="images/logo.svg" alt="Sidebar Logo" />
+          </div>
+
+          <span class="hero-sidebar-close" id="heroCloseNav">
+            <i class="fa-solid fa-circle-xmark hero-close-icon"></i>
+          </span>
+
+          <div class="hero-sidebar-buttons">
+            <button>
+              ALL BOOKS
+              <i class="material-symbols-outlined hero-icon">newsstand</i>
+            </button>
+            <button>
+              NEW ARRIVAL
+              <i class="material-symbols-outlined hero-icon">fiber_new</i>
+            </button>
+            <button>
+              BEST SELLER
+              <i class="material-symbols-outlined hero-icon">recommend</i>
+            </button>
+            <button>
+              EDITOR PICK
+              <i class="material-symbols-outlined hero-icon">editor_choice</i>
+            </button>
+            <button>
+              ABOUT <i class="material-symbols-outlined hero-icon">info</i>
+            </button>
+            <button>
+              CONTACT
+              <i class="material-symbols-outlined hero-icon"
+                >contacts_product</i
+              >
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ✅ Hero Main Content -->
+      <div class="hero-content">
+        <!-- Text Content Left -->
+        <div class="hero-text-content">
+          <h4 class="hero-subtitle">Latest Books</h4>
+          <h1 class="hero-title">
+            You're Only One <br />
+            Book Away <br />
+            From a Good <br />
+            Mood
+          </h1>
+          <p class="hero-description">
+            Lorem ipsum elit. Error quam vel veniam in correcto exercitationem
+            maiores laudantium aspernatur? Recusandae, necessitatibus ullam
+            molestias placeat ex quae eveniet.
+          </p>
+          <div class="hero-discover">
+            <button class="hero-discover-btn">DISCOVER NOW</button>
+          </div>
+        </div>
+
+        <!-- Book Images Right -->
+        <div class="hero-books">
+          <img src="images/book-1-free-img.webp" alt="Book 1" />
+          <img src="images/book-5-free-img.jpg" alt="Book 2" />
+        </div>
+      </div>
+    </section>
+
+    <section class="book-section-2">
+      <div class="book-section">
+        <h1 class="h-section">Discover Your New Book</h1>
+        <p class="p-section">
+          Conque,gravida placeat nibh sunt semper elementum anim integer lectus
+          debitis auctor.
+        </p>
+        <div class="c-section">
+          <div class="s-card">
+            <img src="images/book-1.jpg" alt="books" />
+            <p>Cyber Angel</p>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="book1-star5"
+                name="rating1"
+                value="5"
+              /><label for="book1-star5">★</label>
+              <input
+                type="radio"
+                id="book1-star4"
+                name="rating1"
+                value="4"
+              /><label for="book1-star4">★</label>
+              <input
+                type="radio"
+                id="book1-star3"
+                name="rating1"
+                value="3"
+              /><label for="book1-star3">★</label>
+              <input
+                type="radio"
+                id="book1-star2"
+                name="rating1"
+                value="2"
+              /><label for="book1-star2">★</label>
+              <input
+                type="radio"
+                id="book1-star1"
+                name="rating1"
+                value="1"
+              /><label for="book1-star1">★</label>
+            </div>
+            <p>$18.80</p>
+          </div>
+          <div class="s-card">
+            <img src="images/book-2.jpg" alt="books" />
+            <p>Ark Forging</p>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="book2-star5"
+                name="rating2"
+                value="5"
+              /><label for="book2-star5">★</label>
+              <input
+                type="radio"
+                id="book2-star4"
+                name="rating2"
+                value="4"
+              /><label for="book2-star4">★</label>
+              <input
+                type="radio"
+                id="book2-star3"
+                name="rating2"
+                value="3"
+              /><label for="book2-star3">★</label>
+              <input
+                type="radio"
+                id="book2-star2"
+                name="rating2"
+                value="2"
+              /><label for="book2-star2">★</label>
+              <input
+                type="radio"
+                id="book2-star1"
+                name="rating2"
+                value="1"
+              /><label for="book2-star1">★</label>
+            </div>
+            <p>$20.00</p>
+          </div>
+          <div class="s-card">
+            <img src="images/book-3.jpg" alt="books" />
+            <p>2024 Sanctuary</p>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="book3-star5"
+                name="rating3"
+                value="5"
+              /><label for="book3-star5">★</label>
+              <input
+                type="radio"
+                id="book3-star4"
+                name="rating3"
+                value="4"
+              /><label for="book3-star4">★</label>
+              <input
+                type="radio"
+                id="book3-star3"
+                name="rating3"
+                value="3"
+              /><label for="book3-star3">★</label>
+              <input
+                type="radio"
+                id="book3-star2"
+                name="rating3"
+                value="2"
+              /><label for="book3-star2">★</label>
+              <input
+                type="radio"
+                id="book3-star1"
+                name="rating3"
+                value="1"
+              /><label for="book3-star1">★</label>
+            </div>
+            <p>$17.00</p>
+          </div>
+          <div class="s-card">
+            <img src="images/book-4.jpg" alt="books" />
+            <p>Feugiat Maecenas</p>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="book4-star5"
+                name="rating4"
+                value="5"
+              /><label for="book4-star5">★</label>
+              <input
+                type="radio"
+                id="book4-star4"
+                name="rating4"
+                value="4"
+              /><label for="book4-star4">★</label>
+              <input
+                type="radio"
+                id="book4-star3"
+                name="rating4"
+                value="3"
+              /><label for="book4-star3">★</label>
+              <input
+                type="radio"
+                id="book4-star2"
+                name="rating4"
+                value="2"
+              /><label for="book4-star2">★</label>
+              <input
+                type="radio"
+                id="book4-star1"
+                name="rating4"
+                value="1"
+              /><label for="book4-star1">★</label>
+            </div>
+            <p>$14.00</p>
+          </div>
+          <div class="s-card">
+            <img src="images/book-5.jpg" alt="books" />
+            <p>Liar Of Dreamsl</p>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="book5-star5"
+                name="rating5"
+                value="5"
+              /><label for="book5-star5">★</label>
+              <input
+                type="radio"
+                id="book5-star4"
+                name="rating5"
+                value="4"
+              /><label for="book5-star4">★</label>
+              <input
+                type="radio"
+                id="book5-star3"
+                name="rating5"
+                value="3"
+              /><label for="book5-star3">★</label>
+              <input
+                type="radio"
+                id="book5-star2"
+                name="rating5"
+                value="2"
+              /><label for="book5-star2">★</label>
+              <input
+                type="radio"
+                id="book5-star1"
+                name="rating5"
+                value="1"
+              /><label for="book5-star1">★</label>
+            </div>
+            <p>$20.00</p>
+          </div>
+          <div class="s-card">
+            <img src="images/book-6.jpg" alt="books" />
+            <p>Mists OF Algorab</p>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="book6-star5"
+                name="rating6"
+                value="5"
+              /><label for="book6-star5">★</label>
+              <input
+                type="radio"
+                id="book6-star4"
+                name="rating6"
+                value="4"
+              /><label for="book6-star4">★</label>
+              <input
+                type="radio"
+                id="book6-star3"
+                name="rating6"
+                value="3"
+              /><label for="book6-star3">★</label>
+              <input
+                type="radio"
+                id="book6-star2"
+                name="rating6"
+                value="2"
+              /><label for="book6-star2">★</label>
+              <input
+                type="radio"
+                id="book6-star1"
+                name="rating6"
+                value="1"
+              /><label for="book6-star1">★</label>
+            </div>
+            <p>$18.00</p>
+          </div>
+          <div class="s-card">
+            <img src="images/book-7.jpg" alt="books" />
+            <p>Now You See Mee</p>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="book7-star5"
+                name="rating7"
+                value="5"
+              /><label for="book7-star5">★</label>
+              <input
+                type="radio"
+                id="book7-star4"
+                name="rating7"
+                value="4"
+              /><label for="book7-star4">★</label>
+              <input
+                type="radio"
+                id="book7-star3"
+                name="rating7"
+                value="3"
+              /><label for="book7-star3">★</label>
+              <input
+                type="radio"
+                id="book7-star2"
+                name="rating7"
+                value="2"
+              /><label for="book7-star2">★</label>
+              <input
+                type="radio"
+                id="book7-star1"
+                name="rating7"
+                value="1"
+              /><label for="book7-star1">★</label>
+            </div>
+            <p>$16.00</p>
+          </div>
+          <div class="s-card">
+            <img src="images/book-8.jpg" alt="books" />
+            <p>The Born Of APLEX</p>
+            <div class="star-rating">
+              <input
+                type="radio"
+                id="book8-star5"
+                name="rating8"
+                value="5"
+              /><label for="book8-star5">★</label>
+              <input
+                type="radio"
+                id="book8-star4"
+                name="rating8"
+                value="4"
+              /><label for="book8-star4">★</label>
+              <input
+                type="radio"
+                id="book8-star3"
+                name="rating8"
+                value="3"
+              /><label for="book8-star3">★</label>
+              <input
+                type="radio"
+                id="book8-star2"
+                name="rating8"
+                value="2"
+              /><label for="book8-star2">★</label>
+              <input
+                type="radio"
+                id="book8-star1"
+                name="rating8"
+                value="1"
+              /><label for="book8-star1">★</label>
+            </div>
+            <p>$20.00</p>
+          </div>
+        </div>
+        <button class="discover-btn">Discover More Books</button>
+      </div>
+    </section>
+
+    <section class="choose-category">
+      <div class="container">
+        <h1>Choose By Category</h1>
+        <div class="grid-layout">
+          <div class="card card-a">
+            <img
+              src="images/meditation-concept-digital-art-style_23-2151544415.avif"
+              alt="Religion & Spirituality"
+            />
+            <div class="text">Religion &<br />Spirituality</div>
+          </div>
+          <div class="card card-b">
+            <img
+              src="images/pexels-helenalopes-697244.jpg"
+              alt="Teen & Young Adult"
+            />
+            <div class="text">Teen & Young<br />Adult</div>
+          </div>
+          <div class="card card1">
+            <img
+              src="images/360_F_1181255674_uzlt8yM4aRH6vUHGQvw2fFIWT66swzEN.jpg"
+              alt=""
+            />
+            <div class="text">Literature &<br />Fiction</div>
+          </div>
+          <div class="card card2">
+            <img
+              src="images/360_F_402378687_4lbf7ar51dDMAwjtYWgrB4Nh4JGG2c7w.jpg"
+              alt=""
+            />
+            <div class="text">Crime &<br />Suspense</div>
+          </div>
+          <div class="card card3">
+            <img
+              src="images/360_F_68969092_0MZLIXXMaZPaHAtv7rADSKbLyRe4slZi.jpg"
+              alt=""
+            />
+            <div class="text">Biographies &<br />Memoirs</div>
+          </div>
+          <div class="card card4">
+            <img
+              src="images/480181-mystery-of-the-eye-wallpaper-for-android.jpg"
+              alt=""
+            />
+            <div class="text">Mystery &<br />Thriller</div>
+          </div>
+        </div>
+        <div class="card-btn">
+          <button class="btn">See All Categories</button>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
+    <section class="author-month">
+      <div class="author-wrapper">
+        <div class="author-container">
+          <!-- Left: Author Image -->
+          <div class="author-left">
+            <h1 class="section-title">Author of the Month</h1>
+            <div class="author-photo">
+              <img src="assets/author-image.jpg" alt="Author Photo" />
+              <div class="dots"></div>
+            </div>
+          </div>
+
+          <!-- Middle: Author Info -->
+          <div class="author-center">
+            <div class="author-info">
+              <h2 class="author-name">Melissa Miner</h2>
+              <p class="author-desc">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                aut fugit sed quia consequuntur magni dolores eos qui ratione
+                voluptatem sequi nesciunt. A passionate storyteller who weaves
+                compelling narratives that captivate readers worldwide.
+              </p>
+              <button class="read-more-btn">READ MORE</button>
+            </div>
+          </div>
+
+          <div class="author-right">
+            <div class="book-list">
+              <div class="book-item">
+                <img src="assets/small-book01.jpg" alt="Cyber Angel" />
+                <div class="book-info">
+                  <h3>Cyber Angel</h3>
+                  <span>$20.00 - $22.00</span>
+                </div>
+              </div>
+
+              <div class="book-item">
+                <img src="assets/small-book02.jpg" alt="Ark Forging" />
+                <div class="book-info">
+                  <h3>Ark Forging</h3>
+                  <span>$17.00 - $23.00</span>
+                </div>
+              </div>
+
+              <div class="book-item">
+                <img src="assets/small-book03.jpg" alt="Now You See Me" />
+                <div class="book-info">
+                  <h3>Now You See Me</h3>
+                  <span>$16.00 - $18.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section></section>
+
+    <section class="features">
+      <div class="feature-box">
+        <i class="fas fa-truck icon"></i>
+        <h3>Worldwide Free Shipping</h3>
+        <p>Justo vestibulum risus imperdiet consce sectetur.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-undo icon"></i>
+        <h3>Free Returns For All</h3>
+        <p>Justo vestibulum risus imperdiet consce sectetur.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-percent icon"></i>
+        <h3>10% Student Discounts</h3>
+        <p>Justo vestibulum risus imperdiet consce sectetur.</p>
+      </div>
+      <div class="feature-box">
+        <i class="fas fa-gift icon"></i>
+        <h3>Gift Vouchers</h3>
+        <p>Justo vestibulum risus imperdiet consce sectetur.</p>
+      </div>
+    </section>
+    <section class="content">
+      <div class="content-image">
+        <img src="images/publisher-image.png" alt="Typewriter" />
+      </div>
+      <div class="content-text">
+        <p class="tagline">Become Our Partner</p>
+        <h1>Self - Publishing And Book Writing</h1>
+        <p class="description">
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+          fugit sed quia consequuntur magni dolores eos qui ratione voluptatem
+          sequi nesciunt.
+        </p>
+        <button class="contact-btn">CONTACT NOW</button>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="particles" id="particles"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Join Book Lovers Community and Get Latest Updates</h1>
+          <div class="newsletter-form">
+            <form id="newsletterForm">
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="email-input"
+                  placeholder="Your Email Address"
+                  required
+                  id="emailInput"
+                />
+                <button type="submit" class="subscribe-btn">SUBSCRIBE</button>
+              </div>
+              <div class="success-message" id="successMessage">
+                Welcome to our book lovers community! 📚
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="book-showcase">
+          <div class="book-cover">
+            <img
+              src="assets/modu.svg"
+              alt="Sem Iecu Book Cover"
+              class="book-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Books</a></li>
+              <li><a href="#">Deals</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Explore</h3>
+            <ul>
+              <li><a href="#">Bestsellers</a></li>
+              <li><a href="#">On Sale</a></li>
+              <li><a href="#">Editors Pick</a></li>
+              <li><a href="#">Best Of 2022</a></li>
+              <li><a href="#">Featured</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Delivery & Returns</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Copyright © 2025 Book Worms | Powered by Book Worms</p>
+          <div class="payment-icons">
+            <img src="assets/visa.svg" alt="Visa" />
+            <img src="assets/mastercard.svg" alt="Mastercard" />
+            <img src="assets/amex.svg" alt="Amex" />
+            <img src="assets/applepay.svg" alt="Apple Pay" />
+            <img src="assets/googlepay.svg" alt="Google Pay" />
+          </div>
+          <div class="social-icons">
+            <a href="#"><img src="assets/facebook.svg" alt="Facebook" /></a>
+            <a href="#"><img src="assets/twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="assets/instagram.svg" alt="Instagram" /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Newsletter form submission
+      document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const emailInput = document.getElementById("emailInput");
+          const successMessage = document.getElementById("successMessage");
+          const subscribeBtn = document.querySelector(".subscribe-btn");
+
+          // Simple email validation
+          const email = emailInput.value.trim();
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+          if (!emailRegex.test(email)) {
+            alert("Please enter a valid email address");
+            return;
+          }
+
+          // Animate button
+          subscribeBtn.innerHTML = "SUBSCRIBING...";
+          subscribeBtn.style.background = "#4CAF50";
+
+          // Simulate API call
+          setTimeout(() => {
+            successMessage.style.display = "block";
+            emailInput.value = "";
+            subscribeBtn.innerHTML = "SUBSCRIBED ✓";
+
+            setTimeout(() => {
+              subscribeBtn.innerHTML = "SUBSCRIBE";
+              subscribeBtn.style.background =
+                "linear-gradient(135deg, #f4a261 0%, #e76f51 100%)";
+              successMessage.style.display = "none";
+            }, 3000);
+          }, 1500);
+        });
+
+      // Particle animation
+      function createParticle() {
+        const particle = document.createElement("div");
+        particle.className = "particle";
+        particle.style.left = Math.random() * 100 + "%";
+        particle.style.animationDuration = Math.random() * 3 + 5 + "s";
+        particle.style.animationDelay = Math.random() * 2 + "s";
+
+        document.getElementById("particles").appendChild(particle);
+
+        setTimeout(() => {
+          particle.remove();
+        }, 8000);
+      }
+
+      // Create particles periodically
+      setInterval(createParticle, 500);
+
+      // Book hover effects
+      document.querySelectorAll(".book-cover").forEach((book) => {
+        book.addEventListener("mouseenter", function () {
+          this.style.transform += " scale(1.05)";
+        });
+
+        book.addEventListener("mouseleave", function () {
+          this.style.transform = this.style.transform.replace(
+            " scale(1.05)",
+            ""
+          );
+        });
+
+        book.addEventListener("click", function () {
+          // Add a subtle click animation
+          this.style.transform += " scale(0.95)";
+          setTimeout(() => {
+            this.style.transform = this.style.transform.replace(
+              " scale(0.95)",
+              ""
+            );
+          }, 150);
+        });
+      });
+
+      // Smooth scrolling for footer links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Email input animation
+      const emailInput = document.getElementById("emailInput");
+      emailInput.addEventListener("focus", function () {
+        this.style.transform = "translateY(-2px)";
+        this.style.boxShadow = "0 8px 25px rgba(244, 162, 97, 0.2)";
+      });
+
+      emailInput.addEventListener("blur", function () {
+        this.style.transform = "translateY(0)";
+        this.style.boxShadow = "none";
+      });
+    </script>
+  </body>
+  <script src="script.js"></script>
+</html>

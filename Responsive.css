@@ -1,0 +1,166 @@
+@media screen and (max-width: 1024px) {
+  .hero-section .hero-nav-buttons {
+    display: none;
+  }
+
+  .hero-section .hero-logo {
+    margin-left: 10%;
+    width: 170px;
+  }
+
+  .hero-section .hero-nav-icons {
+    left: 80%;
+    position: fixed;
+    z-index: 1000;
+  }
+
+  .hero-section .hero-menu-toggle {
+    display: block;
+    position: fixed;
+    left: 10px;
+    top: 25px;
+    background-color: white;
+    z-index: 1001;
+  }
+
+  .hero-section .hero-sidebar {
+    display: block;
+    background-color: white;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 70px 10px 20px 10px;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-section .hero-sidebar.active {
+    transform: translateX(0);
+  }
+
+  .hero-section .sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 170px;
+    margin: 20px auto;
+  }
+
+  .hero-section .sidebar-buttons button {
+    background-color: var(--button-color);
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.15);
+  }
+
+  .hero-section .sidebar-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .hero-section .hero-content {
+    padding: 40px 20px;
+    gap: 20px;
+  }
+
+  .hero-section .hero-title {
+    font-size: 42px;
+  }
+
+  .hero-section .hero-description {
+    width: 80%;
+    font-size: 18px;
+  }
+
+  .hero-section .hero-books {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 30px;
+  }
+
+  .hero-section .hero-books img {
+    width: 48%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section .hero-content {
+    padding: 30px 20px;
+  }
+
+  .hero-section .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-section .hero-description {
+    width: 90%;
+    font-size: 17px;
+  }
+
+  .hero-section .hero-books {
+    flex-direction: row;
+    gap: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-section .hero-books img {
+    width: 48%;
+  }
+
+  .hero-section .hero-discover-btn {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-section .hero-nav-icons {
+    left: 75%;
+  }
+
+  .hero-section .hero-content {
+    padding: 25px 15px;
+  }
+
+  .hero-section .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-section .hero-description {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .hero-section .hero-books {
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-section .hero-books img {
+    width: 90%;
+  }
+
+  .hero-section .hero-discover-btn {
+    width: 150px;
+    height: 45px;
+    font-size: 15px;
+  }
+}
