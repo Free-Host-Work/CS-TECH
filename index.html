@@ -1,67 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <!-- Basic Meta Tags -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="google-site-verification" content="g57Nje0xeUjfxcqBuwo5wslkQ86vavAcCLlCvpfbDiE" />
-  <!-- Title Tag -->
-  <title>CS Tech Solutions | Online Bookstore & Library for Buying Books</title>
-
-  <!-- Meta Description -->
-  <meta
-    name="description"
-    content="CS Tech Solutions offers an online bookstore and digital library for easy purchasing of books. Explore a vast collection of books in all genres and get fast delivery."
-  />
-
-  <!-- Meta Keywords -->
-  <meta
-    name="keywords"
-    content="online bookstore, buy books online, digital library, book purchasing, CS Tech Solutions, library software"
-  />
-
-  <!-- Canonical URL updated to free hosting URL -->
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0a3d62" />
+  
+  <!-- Title (Unique, under 60 chars) -->
+  <title>Online Bookstore Demo by CS Tech Solutions | Buy Books Easily</title>
+  
+  <!-- Meta Description (150-160 chars, engaging & keyword rich) -->
+  <meta name="description" content="Explore CS Tech Solutions' demo online bookstore: vast book collections, easy purchase, fast delivery. Your go-to demo library project for book buying." />
+  
+  <!-- Meta Keywords (expanded for broad matching) -->
+  <meta name="keywords" content="online bookstore demo, buy books online, digital library demo, CS Tech Solutions demo project, book purchasing platform, ebook store demo, library software demo, book delivery service demo" />
+  
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://username.github.io/cstechbookstore/" />
-
+  
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon" />
-
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Online Bookstore Demo by CS Tech Solutions | Buy Books Easily" />
+  <meta property="og:description" content="Explore CS Tech Solutions' demo online bookstore: vast book collections, easy purchase, fast delivery. Your go-to demo library project for book buying." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://username.github.io/cstechbookstore/" />
+  <meta property="og:image" content="https://username.github.io/cstechbookstore/og-image.jpg" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Online Bookstore Demo by CS Tech Solutions | Buy Books Easily" />
+  <meta name="twitter:description" content="Explore CS Tech Solutions' demo online bookstore: vast book collections, easy purchase, fast delivery. Your go-to demo library project for book buying." />
+  <meta name="twitter:image" content="https://username.github.io/cstechbookstore/twitter-image.jpg" />
+  <meta name="twitter:site" content="@cstechsolutions" />
+  
   <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap"
-    rel="stylesheet"
-  />
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  
   <!-- Font Awesome -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <!-- Your CSS -->
   <link rel="stylesheet" href="styles.css" />
-
-  <!-- Structured Data with updated URL -->
+  
+  <!-- Structured Data JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BookStore",
-    "name": "CS Tech Solutions Online Bookstore",
+    "name": "CS Tech Solutions Online Bookstore Demo",
     "url": "https://username.github.io/cstechbookstore/",
     "logo": "https://username.github.io/cstechbookstore/logo.png",
+    "description": "Demo project by CS Tech Solutions featuring an online bookstore with book purchasing and digital library features.",
     "sameAs": [
       "https://www.facebook.com/cstechsolutions",
       "https://twitter.com/cstechsolutions",
       "https://www.linkedin.com/company/cstechsolutions"
     ],
-    "description": "Your trusted online bookstore and library to purchase books across all genres with fast delivery."
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Demo Street 1",
+      "addressLocality": "Demo City",
+      "addressRegion": "DC",
+      "postalCode": "000000",
+      "addressCountry": "IN"
+    },
+    "telephone": "+91-0000000000",
+    "email": "demo@cstechsolutions.com",
+    
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Book Offers",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Book",
+            "name": "Example Book Title 1"
+          },
+          "price": "199",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Book",
+            "name": "Example Book Title 2"
+          },
+          "price": "299",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/OutOfStock"
+        }
+      ]
+    },
+    
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://username.github.io/cstechbookstore/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Books",
+          "item": "https://username.github.io/cstechbookstore/books.html"
+        }
+      ]
+    }
   }
   </script>
-
-  <!-- Your JavaScript -->
+  
+  <!-- Defer JavaScript for faster loading -->
   <script defer src="script.js"></script>
 </head>
+
 
   <body>
     <!-- ✅ Fully Self-contained Hero Section -->
@@ -824,4 +885,5 @@
   </body>
   <script src="script.js"></script>
 </html>
+
 
